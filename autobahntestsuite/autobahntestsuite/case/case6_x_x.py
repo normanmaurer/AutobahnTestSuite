@@ -393,8 +393,5 @@ if __name__ == '__main__':
    #UTF8_TEST_SEQUENCES = createUtf8TestSequences()
    #test_utf8(UTF8_TEST_SEQUENCES)
 
-   TESTPOINTS = [(0xfffb, u'\ufffb'),
-                 (0xd807, u'\ud807'),
-                 (0x11000, None),
-                 (0x110000, None)]
+   TESTPOINTS = []
    test_encode(TESTPOINTS)
