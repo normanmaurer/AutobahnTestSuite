@@ -577,7 +577,7 @@ class FuzzingFactory:
 
       report_filename = "index.json"
       f = open(os.path.join(outdir, report_filename), 'w')
-      f.write(json.dumps(res, sort_keys = True, indent = 3, separators = (',', ': ')))
+      f.write(json.dumps(res, sort_keys = True, indent = 3, separators = (',', ': '), encoding = 'ISO-8859-1')))
       f.close()
 
 
